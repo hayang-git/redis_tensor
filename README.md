@@ -1,5 +1,6 @@
 # 功能说明
-
+将numpy的narray存储到redis中，方便不同进程共享，如果存在大量的narray需要文件交互
+可以采用该方法替代。
 
 ## 安装
 1. redis-server安装

@@ -34,7 +34,7 @@ class RedisTensor:
         return str(shape).replace(' ', '')
     
     def str_to_shape(self, shape:str):
-        return tuple(map(int, shape[1:-1].split(',')))
+        return tuple(map(int, filter(None, shape[1:-1].split(','))))
     
     def set(self, key:str, tensor:np.ndarray):
         key_shape = key + "_shape"

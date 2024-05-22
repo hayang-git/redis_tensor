@@ -268,7 +268,7 @@ private:
             }
         }
         if (dims.size() == 1) {
-            dims_str + ",)";
+            dims_str += ",)";
         } else {
             dims_str += ")";
         }
